@@ -1,0 +1,30 @@
+{
+  "name": "holtkamp/simplebus-asynchronous-bernard-sqs",
+  "description": "Demonstration of using an Asynchronous Message Bus that uses Bernard to persist messages on Amazon SQS",
+  "keywords": [
+    "simplebus",
+    "message bus",
+    "command bus",
+    "asynchronous",
+    "bernard",
+    "sqs"
+  ],
+  "homepage": "http://github.com/holtkamp/simplebus-asynchronous-bernard-sqs",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^7.0",
+    "aws/aws-sdk-php": "^3.20",
+    "bernard/bernard": "dev-master",
+    "php-di/slim-bridge": "@stable",
+    "simple-bus/bernard-bundle-bridge": "dev-master",
+    "monolog/monolog": "^1.22"
+  },
+  "config": {
+    "process-timeout" : 0
+  },
+  "scripts": {
+    "start": "php -S 0.0.0.0:8080 -t public public/index.php"
+  }
+}
